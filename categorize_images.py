@@ -44,9 +44,9 @@ transform_val_test = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
-train_dataset = ImageFolder(root='/content/drive/MyDrive/train', transform=transform_train)
-val_dataset = ImageFolder(root='/content/drive/MyDrive/val', transform=transform_val_test)
-test_dataset = ImageFolder(root='/content/drive/MyDrive/test', transform=transform_val_test)
+train_dataset = ImageFolder(root='yourpath_train', transform=transform_train)
+val_dataset = ImageFolder(root='yourpath_val', transform=transform_val_test)
+test_dataset = ImageFolder(root='yourpath_test', transform=transform_val_test)
 
 num_classes = len(train_dataset.classes)
 
